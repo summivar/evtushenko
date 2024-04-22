@@ -50,20 +50,16 @@ export const Home = () => {
             стихотворение, выражающее его негодование по отношению к
             государству. Строчки из него:
           </span>
-          <hr className="mt-4" />
           <div className="flex flex-col my-1">
-            <span className="text-xl text-center">
+            <span className="text-center italic">
               Нам мир навешал столько плюх!
             </span>
-            <span className="text-xl text-center">
+            <span className="text-center italic">
               "Спартак" в газетах круче "Барса"...
             </span>
-            <span className="text-xl text-center">Я Родину свою люблю,</span>
-            <span className="text-xl text-center">
-              Но ненавижу государство!
-            </span>
+            <span className="text-center italic">Я Родину свою люблю,</span>
+            <span className="text-center italic">Но ненавижу государство!</span>
           </div>
-          <hr />
         </section>
       </div>
     </main>
