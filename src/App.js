@@ -6,21 +6,75 @@ import { PostLists } from "./pages/postLists";
 import { Photos } from "./pages/photos";
 import { PhotoLists } from "./pages/photoLists";
 import { Onlyfans } from "./pages/onlyfans";
+import { StartRoom } from "./pages/startRoom";
+import { Like } from "./pages/like";
+
+function WithHeader({ children }) {
+  return (
+    <>
+      <Header />
+      {children}
+    </>
+  );
+}
 
 function AppLayout() {
   return (
     <>
-      <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/posts" element={<Posts />}>
+        <Route
+          path="/"
+          element={
+            <WithHeader>
+              <Home />
+            </WithHeader>
+          }
+        />
+        <Route
+          path="/posts"
+          element={
+            <WithHeader>
+              <Posts />
+            </WithHeader>
+          }
+        >
           <Route index element={<PostLists />} />
         </Route>
-        <Route path="/photos" element={<Photos />}>
+        <Route
+          path="/photos"
+          element={
+            <WithHeader>
+              <Photos />
+            </WithHeader>
+          }
+        >
           <Route index element={<PhotoLists />} />
         </Route>
-        <Route path="/onlyfans" element={<Onlyfans />} />
-        <Route path="*" element={<Home />} />
+        <Route
+          path="/onlyfans"
+          element={
+            <WithHeader>
+              <Onlyfans />
+            </WithHeader>
+          }
+        />
+        <Route
+          path="/like"
+          element={
+            <WithHeader>
+              <Like />
+            </WithHeader>
+          }
+        />
+        <Route path="/evtushenko" element={<StartRoom />} />
+        <Route
+          path="*"
+          element={
+            <WithHeader>
+              <Home />
+            </WithHeader>
+          }
+        />
       </Routes>
     </>
   );

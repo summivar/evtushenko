@@ -1,7 +1,8 @@
-import { Link, useLocation } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom";
+import "./css/text-multicolor.css";
 
 export const Header = () => {
-  const { pathname } = useLocation()
+  const { pathname } = useLocation();
   return (
     <header>
       <nav className="bg-gradient-to-r from-sky-300 to-rose-[#ffbe98]">
@@ -40,6 +41,14 @@ export const Header = () => {
                   }
                 >
                   Onlyfans
+                </Link>
+                <Link
+                  to="/like"
+                  className={
+                    "text-multicolor fond-bold text-black hover:bg-red-500 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                  }
+                >
+                  Поставить лайк
                 </Link>
               </div>
             </div>
@@ -81,9 +90,17 @@ export const Header = () => {
             >
               Onlyfans
             </Link>
+            <Link
+              to="/like"
+              className={
+                "text-multicolor text-black hover:bg-red-500 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+              }
+            >
+              Поставить лайк
+            </Link>
           </div>
         </div>
       </nav>
     </header>
-  )
-}
+  );
+};
