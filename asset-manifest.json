@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/evtushenko/static/css/main.9fb836c2.css",
-    "main.js": "/evtushenko/static/js/main.11ca6e4e.js",
+    "main.js": "/evtushenko/static/js/main.8aa73ab7.js",
     "static/js/787.37e935b2.chunk.js": "/evtushenko/static/js/787.37e935b2.chunk.js",
     "static/media/matrica_sudby.svg": "/evtushenko/static/media/matrica_sudby.fbad3f456aa397488ece9853bda79d96.svg",
     "index.html": "/evtushenko/index.html",
     "main.9fb836c2.css.map": "/evtushenko/static/css/main.9fb836c2.css.map",
-    "main.11ca6e4e.js.map": "/evtushenko/static/js/main.11ca6e4e.js.map",
+    "main.8aa73ab7.js.map": "/evtushenko/static/js/main.8aa73ab7.js.map",
     "787.37e935b2.chunk.js.map": "/evtushenko/static/js/787.37e935b2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9fb836c2.css",
-    "static/js/main.11ca6e4e.js"
+    "static/js/main.8aa73ab7.js"
   ]
 }
